@@ -10,8 +10,8 @@ body {
 .progress-bar {
     width: 0;
     height: 30px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: rgba(76, 175, 80, 0.7); /* Transparent green background */
+    color: white; /* White text color */
     text-align: center;
     line-height: 30px;
 }
