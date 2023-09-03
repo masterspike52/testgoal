@@ -5,7 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Follow Goal Tracker</title>
     <style>
-        /* Your CSS styles here */
+        /* Set the text color to white for all elements inside the container */
+        .container * {
+            color: white;
+        }
+
+        /* Your existing CSS styles here */
+
     </style>
 </head>
 <body>
@@ -21,37 +27,7 @@
     </div>
 
     <script>
-        // Retrieve the progress and count from local storage
-        let currentFollowCount = parseInt(localStorage.getItem("followCount")) || 0;
-        let currentFollowGoal = parseInt(localStorage.getItem("followGoal")) || 100;
-
-        function updateProgressBar() {
-            const followProgress = (currentFollowCount / currentFollowGoal) * 100;
-            document.getElementById("followProgress").style.width = followProgress + "%";
-            document.getElementById("followGoal").textContent = currentFollowGoal;
-            document.getElementById("followCount").textContent = currentFollowCount;
-        }
-
-        function editFollowGoal() {
-            const newFollowGoal = prompt("Enter new follow goal:");
-            if (newFollowGoal !== null && !isNaN(newFollowGoal)) {
-                currentFollowGoal = parseInt(newFollowGoal);
-                localStorage.setItem("followGoal", currentFollowGoal);
-                updateProgressBar();
-            }
-        }
-
-        function editFollowCount() {
-            const newFollowCount = prompt("Enter new follow count:");
-            if (newFollowCount !== null && !isNaN(newFollowCount)) {
-                currentFollowCount = parseInt(newFollowCount);
-                localStorage.setItem("followCount", currentFollowCount);
-                updateProgressBar();
-            }
-        }
-
-        // Initial update
-        updateProgressBar();
+        // Your existing JavaScript code here
     </script>
 </body>
 </html>
