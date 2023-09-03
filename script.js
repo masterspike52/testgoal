@@ -1,5 +1,5 @@
 // Replace 'https://www.tiktok.com/@username' with the TikTok profile URL you want to scrape
-const TIKTOK_PROFILE_URL = 'https://www.tiktok.com/@madladmikael';
+const TIKTOK_PROFILE_URL = 'https://www.tiktok.com/@madaldmikael';
 
 function scrapeTikTokData() {
     fetch(TIKTOK_PROFILE_URL)
